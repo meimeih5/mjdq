@@ -130,4 +130,14 @@ $(function(){
 					
 				);
 				
+				$("#list-nav").children().mouseover(function(){
+					$(this).css("background","#999").siblings().css("background","rgba(0,0,0,0.4)");
+					$("#list-aside").show();
+				});
+				$("#list-nav").children().mouseout(function(){
+					$(this).css("background","rgba(0,0,0,0.4)");
+					$("#list-aside").hide();
+				});	
+				
+				
 			});

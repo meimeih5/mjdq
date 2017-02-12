@@ -13,6 +13,9 @@ a {
 img {
   border: none; }
 
+a:hover {
+  color: red; }
+
 html, body {
   width: 100%;
   line-height: 20px;
@@ -214,6 +217,74 @@ i {
       padding: 16px 0;
       font-size: 14px;
       z-index: 3; }
+      #banner .banner #list-nav li {
+        width: 220px;
+        height: 56px;
+        line-height: 56px; }
+        #banner .banner #list-nav li i {
+          float: left;
+          width: 22px;
+          height: 22px;
+          background: url(../img/index_sprite.png) -4px -4px no-repeat;
+          margin: 18px 20px 0; }
+        #banner .banner #list-nav li a {
+          color: #fff;
+          float: left;
+          margin-left: 10px; }
+        #banner .banner #list-nav li a:last-child {
+          color: gray; }
+    #banner .banner #list-aside {
+      width: 660px;
+      height: 475px;
+      background: #fff;
+      position: absolute;
+      left: 220px;
+      top: 0;
+      box-shadow: 5px 5px 0 0 rgba(0, 255, 255, 0.5);
+      display: none; }
+      #banner .banner #list-aside #list-aside-left {
+        width: 219px;
+        height: 475px;
+        position: static;
+        border-right: 1px solid #ccc;
+        padding: 16px 0;
+        float: left; }
+        #banner .banner #list-aside #list-aside-left li {
+          width: 220px;
+          height: 56px;
+          line-height: 56px; }
+          #banner .banner #list-aside #list-aside-left li i {
+            width: 32px;
+            float: left;
+            height: 32px;
+            margin: 10px 20px 0 40px; }
+      #banner .banner #list-aside #list-aside-center {
+        width: 219px;
+        height: 475px;
+        border-right: 1px solid #ccc;
+        float: left; }
+        #banner .banner #list-aside #list-aside-center .list-aside-center-son {
+          height: 138px;
+          border-bottom: 1px solid #ccc;
+          padding-top: 20px; }
+          #banner .banner #list-aside #list-aside-center .list-aside-center-son img {
+            float: left; }
+          #banner .banner #list-aside #list-aside-center .list-aside-center-son span {
+            float: left;
+            width: 80px;
+            margin-top: 20px; }
+      #banner .banner #list-aside #list-aside-right {
+        width: 220px;
+        height: 475px;
+        text-align: center;
+        float: left; }
+        #banner .banner #list-aside #list-aside-right .list-aside-right-son {
+          height: 217px;
+          border-bottom: 1px solid #ccc;
+          padding-top: 20px; }
+          #banner .banner #list-aside #list-aside-right .list-aside-right-son span {
+            display: block;
+            margin-top: 30px; }
 
 #btn {
   position: absolute;
@@ -270,33 +341,32 @@ i {
         #star-item .star-item .star-item-top .star-item-top-left a {
           display: inline-block;
           width: 597px;
-          height: 670px;
+          height: 690px;
           border: 1px solid #ccc;
           border-right: none;
           color: #999;
           perspective: 800px; }
           #star-item .star-item .star-item-top .star-item-top-left a img {
-            margin-left: 40px;
-            margin-bottom: 20px;
-            margin-top: 40px;
+            margin-top: 75px;
             transform-style: preserve-3d;
             transition: all 2s; }
           #star-item .star-item .star-item-top .star-item-top-left a i {
             font-style: normal;
-            display: block; }
+            display: block;
+            margin-top: 20px; }
         #star-item .star-item .star-item-top .star-item-top-left a:hover img {
           transform: rotateY(360deg); }
         #star-item .star-item .star-item-top .star-item-top-left a:hover i {
           color: red; }
       #star-item .star-item .star-item-top .star-item-top-right {
         width: 600px;
-        height: 670px;
+        height: 690px;
         float: right;
         border: 1px solid #ccc;
         text-align: center; }
         #star-item .star-item .star-item-top .star-item-top-right a {
           width: 299px;
-          height: 335px;
+          height: 345px;
           float: left;
           border-right: 1px solid #ccc;
           border-bottom: 1px solid #ccc; }
@@ -364,12 +434,13 @@ i {
       color: red; }
     #members-area .members-area p {
       width: 299px;
-      height: 418px;
+      height: 388px;
       float: left;
       border-right: 1px solid #ccc;
       border-top: 1px solid #ccc;
       border-bottom: 1px solid #ccc;
       margin-top: 40px;
+      padding-top: 30px;
       position: relative; }
       #members-area .members-area p .lj {
         width: 120px;
@@ -378,18 +449,16 @@ i {
         border-radius: 5px;
         display: inline-block;
         line-height: 40px;
-        margin-top: 30px; }
-      #members-area .members-area p #mc {
-        width: 300px;
-        height: 0px;
-        background: gray;
-        opacity: 0.4;
         position: absolute;
-        left: 0;
-        top: 0;
-        transition: all 2s; }
-    #members-area .members-area p:hover #mc {
-      transform: translateY(420px); }
+        left: 90px;
+        top: -40px;
+        background: red;
+        z-index: 10px;
+        transition: all 1s;
+        opacity: 0; }
+    #members-area .members-area p:hover .lj {
+      transform: translateY(380px);
+      opacity: 1; }
 
 #footer {
   width: 100%; }
